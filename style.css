@@ -45,6 +45,77 @@
 }
 
 /*=============== BASE ===============*/
+
+/* Popup container - can be anything you want */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 40%;
+  position: relative;
+  top: 30px;
+  height:220px;
+}
+.aboutme{
+  letter-spacing: 1px;
+  color: #333;
+  font-size: 20px;
+}
+.desk{
+  position: relative;
+  letter-spacing: 0.7px;
+  top: 14px;
+  text-align: justify;
+  font-weight: 420;
+  width: 500px;
+  font-family: poppins;
+  color: #31304D;
+}
+.garis{
+  position: relative;
+  top: 5px;
+  width: 70px;
+  border: none;
+  border-radius: 8px;
+  background-color: #42A5F5;
+  height: 5px;
+}
+
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -88,6 +159,9 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+#ax{
+  margin-top: 23px;
 }
 
 /*=============== THEME ===============*/
@@ -576,6 +650,22 @@ height: 290px;
 width: 70%;
 }
 }
+
+@media screen and (max-width: 844px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    width: 85%;
+    height: 260px;
+  }
+  .desk{
+    width: 270px;
+  }
+}
+
 
 /* For large devices */
 @media screen and (min-width: 992px) {
